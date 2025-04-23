@@ -5,14 +5,14 @@ $("#messageState").on("change", (x) =>
 	{
 		$(".message").removeClass("closed").removeClass("no-anim").addClass("openNor");
 		$(".heart").removeClass("closeHer").removeClass("openedHer").addClass("openHer");
-		$(".container").stop().animate({"backgroundColor": "#f48fb1"}, 2000);
+		// $(".container").stop().animate({"backgroundColor": "#f48fb1"}, 2000);
 		console.log("Abrindo");
 	} 
 	else 
 	{
 		$(".message").removeClass("no-anim").addClass("closeNor");
 		$(".heart").removeClass("openHer").removeClass("openedHer").addClass("closeHer");
-		$(".container").stop().animate({"backgroundColor": "#fce4ec"}, 2000);
+		// $(".container").stop().animate({"backgroundColor": "#fce4ec"}, 2000);
 		console.log("fechando");
 	}
 });
