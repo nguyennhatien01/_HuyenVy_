@@ -14,7 +14,7 @@
         <div class="container">
             <label>
             <div class="heart">
-                <img src="[https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Red-Heart-vector-2731436.svg/640px-Red-Heart-vector-2731436.svg.png](https://png.pngtree.com/png-vector/20241217/ourlarge/pngtree-hearts-two-3d-love-png-image_14701149.png)"></img>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Red-Heart-vector-2731436.svg/640px-Red-Heart-vector-2731436.svg.png"></img>
             </div>
             <input id="messageState" type="checkbox" style="display:none"/>
             </label>
