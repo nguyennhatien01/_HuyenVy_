@@ -14,33 +14,31 @@ h1
 	font-weight: 200;
 }
 
-body 
-{
+body {
     margin: 0px;
-    background-image: url('images/huyenvy.jpeg'); /* Đường dẫn đến ảnh nền */
-    background-size: cover; /* Đảm bảo ảnh phủ toàn bộ màn hình */
-    background-position: center; /* Căn giữa ảnh nền */
-    background-repeat: no-repeat; /* Không lặp lại ảnh */
-    background-attachment: fixed; /* Ảnh nền cố định khi cuộn */
+    background-image: url('images/huyenvy.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.instruction
+.instruction 
 {
-	position: absolute;
-	font-size: 2.4rem;
-	color: rgba(255, 0, 0, 0.554);
-	top: 36%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-weight: bold;
+	position: absolute; /* Vị trí tuyệt đối */
+	font-size: 2.4rem; /* Kích thước chữ là 2.4rem */ 
+	color: rgba(255, 0, 0, 0.554); /* Màu chữ là đỏ với độ trong suốt */
+	top: 36%; /* Căn trên 36% */ 
+	left: 50%; /* Căn trái 50% */
+	transform: translate(-50%, -50%); /* Dịch chuyển phần tử về giữa */
+	font-weight: bold; 	/* Đậm chữ */
 }
 
 .container 
 {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+	position: relative; /* Vị trí tương đối */ 
+	width: 100%; /* Chiều rộng 100% */
+	height: 100vh; /* Chiều cao*/
+	overflow: hidden; /* Ẩn phần nội dung vượt quá chiều cao */
 }
 
 .heart 
@@ -57,91 +55,91 @@ body
 
 .heart > img 
 {
-	width: 200px;
-	height: auto;
+	width: 200px; /* Đặt chiều rộng của ảnh là 200px */
+	height: auto;	/* Chiều cao tự động để giữ tỷ lệ khung hình */
 
-	animation-name: beat;
-	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-play-state: running;
+	animation-name: beat; /* Đặt tên cho animation */
+	animation-duration: 2s; /* Thời gian chạy animation là 2 giây */ 
+	animation-timing-function: ease-in-out; /* Hàm thời gian cho animation */
+	animation-iteration-count: infinite; /* Lặp lại animation vô hạn */
+	animation-play-state: running; /* Trạng thái chạy của animation */
 }
 
 .message 
 {
-	padding: 25px;
-	background-color: #eee;
-	font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-	font-size: clamp(16px, 10vw, 17px);
-	text-align: justify;
-	line-height: 1.5em;
-	width: 80%;
-	max-width: 550px;
-	height: 78%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 0;
+	padding: 25px; /* Thêm padding cho phần tử */
+	background-color: #ffffff; /* Màu nền của phần tử */
+	font-family: "Quicksand", serif; /* Font chữ cho phần tử */
+    font-optical-sizing: auto; /* Tự động điều chỉnh kích thước chữ */
+	font-size: clamp(16px, 10vw, 17px); /*Kích thước chữ thay đổi theo kích */
+	text-align: justify; /* Căn chỉnh văn bản đều hai bên */
+	line-height: 1.5em; /* Khoảng cách giữa các dòng */
+	width: 80%; /* Chiều rộng của phần tử là 80% */
+	max-width: 550px; /* Chiều rộng tối đa là 550px */
+	height: 78%; /* Chiều cao của phần tử là 78% */
+	position: absolute; /* Vị trí tuyệt đối */
+	left: 50%; /* Căn trái 50% */
+	top: 50%; /* Căn trên 50% */
+	transform: translate(-50%, -50%); /* Dịch chuyển phần tử về giữa */
+	z-index: 0; /* Đặt z-index là 0 */
 
-	animation-name: openmsg;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-play-state: paused;
-	animation-fill-mode: forwards;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	border-radius: 5px;
-	overflow: scroll;
-	scrollbar-width: none;
-}
+	animation-name: openmsg; /* Đặt tên cho animation */
+	animation-duration: 2s; /* Thời gian chạy animation là 2 giây */
+	animation-timing-function: linear; /* Hàm thời gian cho animation */
+	animation-play-state: paused; /* Trạng thái tạm dừng của animation */
+	animation-fill-mode: forwards; /* Giữ nguyên trạng thái cuối cùng của animation */
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Đổ bóng cho phần tử */
+	border-radius: 5px; /* Bo tròn các góc của phần tử */
+	overflow: scroll; /* Thêm thanh cuộn nếu nội dung vượt quá chiều cao */
+	scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+} 
  
-.message .sincere
+.message .sincere 
 {
-	text-align: left;
-	font-family: "Cinzel, serif";
-	font-size: 14px;
-	line-height: 1.2em;
+	text-align: left; /* Căn trái văn bản */
+	font-family: "Cinzel, serif"; 
+	font-size: 14px; /* Kích thước chữ là 14px */
+	line-height: 1.2em; /* Khoảng cách giữa các dòng */
 }
 
 .message .sincere p
 {
-	margin: 0;
+	margin: 0; /* Đặt margin là 0 */
 }
 
 @keyframes beat 
 {
 	0% {
-		width: 50px;
+		width: 50px; /* Chiều rộng ban đầu */
 	}
 	25% {
-		width: 58px;
+		width: 58px; /* Chiều rộng lớn nhất */
 	}
 	30% {
-		width: 50px;
+		width: 50px; /* Trở về chiều rộng ban đầu */
 	}
 	50% {
-		width: 45px;
+		width: 45px; /* Chiều rộng nhỏ nhất */
 	}
 	60% {
-		width: 50px;
+		width: 50px; /* Trở về chiều rộng ban đầu */
 	}
 	75% {
-		width: 58px;
+		width: 58px; /* Chiều rộng lớn nhất */
 	}
 	100% {
-		width: 50px;
+		width: 50px; /* Trở về chiều rộng ban đầu */
 	}
 }
 
 @keyframes openmsg {
 	0% {
-		height: 0px;
-		padding: 0px 20px;
+		height: 0px; /* Chiều cao ban đầu */
+		padding: 0px 20px; /* Padding ban đầu */
 	}
 	100% {
-		height: 75%;
-		padding: 20px 20px;
+		height: 75%; 	/* Chiều cao cuối cùng */
+		padding: 20px 20px; /* Padding cuối cùng */
 	}
 }
 
@@ -179,7 +177,7 @@ body
 }
 
 .openHer {
-	animation-name: heartMove;
+	animation-name: heartMove; 
 	animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-play-state: running;
@@ -196,14 +194,14 @@ body
 }
 
 .beating > img {
-	animation-name: beat;
-	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-play-state: running;
+	animation-name: beat; /* Đặt tên cho animation */
+	animation-duration: 1s; /* Thời gian chạy animation là 2 giây */
+	animation-timing-function: ease-in-out; /* Hàm thời gian cho animation */
+	animation-iteration-count: infinite; /* Lặp lại animation vô hạn */
+	animation-play-state: running; /* Trạng thái chạy của animation */
 }
 
 .openedHer {
 	top: 85%;
-	transform: translate(-50%, 0);
+	transform: translate(-50%, 0); /* Dịch chuyển phần tử về vị trí cuối cùng */ 
 }
